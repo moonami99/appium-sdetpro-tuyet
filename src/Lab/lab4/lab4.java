@@ -62,9 +62,29 @@ public class lab4 {
     }
     public static int getUserOption(){
 
-        System.out.printf("Please input your option: ");
+        /*System.out.printf("Please input your option: ");
+        Scanner scanner = new Scanner(System.in);*/
+
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+
+        int number;
+
+        while (true) {
+            System.out.printf("Please input your option: ");
+            if (scanner.hasNextInt()) {
+                number = scanner.nextInt();
+                if (number >= 1 && number <= 4) {
+                    break;
+                } else {
+                    System.out.println("The input value is invalid. Please re-enter.");
+                }
+            } else {
+                System.out.println("The input value is invalid. Please re-enter.");
+                scanner.next();
+            }
+        }
+
+        return number;
     }
     public static List<Integer> createListInt(){
         //create size of array <20
