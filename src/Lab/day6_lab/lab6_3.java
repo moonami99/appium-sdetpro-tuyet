@@ -1,9 +1,5 @@
 package Lab.day6_lab;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class lab6_3 {
     public static void main(String[] args) {
         /*
