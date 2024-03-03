@@ -29,6 +29,7 @@ public class TestAnimal {
 
         System.out.println("Max speed of flyable animals: " + maxSpeedFlyable);
 
+        System.out.println(winner);
 
     }
 }
