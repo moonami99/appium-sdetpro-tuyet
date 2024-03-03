@@ -15,6 +15,7 @@ public class TestAnimal {
         animals.add(new ListClassAnimal.Falcon.Builder().setName("Falcon").setMaxSpeed(200).setFlyable(true).build());  // Falcon
         animals.add(new ListClassAnimal.Snake.Builder().setName("Snake").setMaxSpeed(120).setFlyable(false).build()); // Snake
         animals.add(new ListClassAnimal.Eagle.Builder().setName("Eagle").setMaxSpeed(220).setFlyable(true).build());  // Eagle
+        animals.add(new ListClassAnimal.Tiger());
 
         System.out.println(animals);
 
